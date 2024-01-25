@@ -6,10 +6,11 @@ public class Main {
         int quantityNumber = sc.nextInt();
         double[] values = new double[quantityNumber];
         double sum = 0;
-        double avarage = 0;
         for(int i = 0; i < values.length; i++){
             values[i] = sc.nextDouble();
+            sum += values[i];
         }
+        double average = sum / values.length;
         sc.close();
     }
 }
